@@ -17,8 +17,8 @@
 	});
 }
 </script>
-
-<h1>Currency</h1>
+<section class="content">
+	<h1>Currency</h1>
 <a href="<?= base_url()?>Home/Add_currency">Add</a>
 
 <input type="text" id="currency_keyword"><button type="button" id="search_currency">Search</button>
@@ -92,4 +92,8 @@
     </div>
   </div>
 					<!-- Modal End -->
+
+	
+</section>
+
 

@@ -6,7 +6,7 @@ class Home extends CI_Controller {
 	function __construct() {
         parent::__construct();
         $this->load->model('home_model');
-        $this->perPage = 1;
+        $this->perPage = 10;
         
     }
 
