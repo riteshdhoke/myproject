@@ -60,6 +60,7 @@ class Home extends CI_Controller {
 		}
 
 		$this->load->view('include/header');
+		$this->load->view('include/sidebar');
 		$this->load->view('dashboard');
 		$this->load->view('include/footer');
 	}
@@ -74,6 +75,7 @@ class Home extends CI_Controller {
 		}
 
 		$this->load->view('include/header');
+		$this->load->view('include/sidebar');
 		$this->load->view('agent/agents');
 		$this->load->view('include/footer');
 	}
@@ -101,6 +103,7 @@ class Home extends CI_Controller {
         $data['sr'] = 1;
         $data['currency_data'] = $this->home_model->get_currency_limits(array('limit'=>$this->perPage));
 		$this->load->view('include/header');
+		$this->load->view('include/sidebar');
 		$this->load->view('currency/currency',$data);
 		$this->load->view('include/footer');
 	} 
@@ -145,6 +148,7 @@ class Home extends CI_Controller {
 		}
 
 		$this->load->view('include/header');
+		$this->load->view('include/sidebar');
 		$this->load->view('country/country');
 		$this->load->view('include/footer');
 
@@ -158,6 +162,7 @@ class Home extends CI_Controller {
 		}
 
 		$this->load->view('include/header');
+		$this->load->view('include/sidebar');
 		$this->load->view('agent/agents_group');
 		$this->load->view('include/footer');
 
@@ -189,6 +194,7 @@ class Home extends CI_Controller {
 
 		}else{
 			$this->load->view('include/header');
+			$this->load->view('include/sidebar');
 			$this->load->view('currency/add_currency');
 			$this->load->view('include/footer');	
 		}
@@ -226,6 +232,7 @@ class Home extends CI_Controller {
 
 		}else{
 			$this->load->view('include/header');
+			$this->load->view('include/sidebar');
 			$this->load->view('currency/add_currency');
 			$this->load->view('include/footer');	
 		}
@@ -259,6 +266,7 @@ class Home extends CI_Controller {
 
 			$data['website_settings_data'] = $this->home_model->get_website_settings();
 			$this->load->view('include/header');
+			$this->load->view('include/sidebar');
 			$this->load->view('manage_website',$data);
 			$this->load->view('include/footer');
 
@@ -272,6 +280,7 @@ class Home extends CI_Controller {
 
 			$data['website_settings_data'] = $this->home_model->get_website_settings();
 			$this->load->view('include/header');
+			$this->load->view('include/sidebar');
 			$this->load->view('update_manage_website',$data);
 			$this->load->view('include/footer');
 
